@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function loadHTML(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                });
         }
-    </style>
-    <title>Kieran Pearson's Portfolio</title>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHTML('header.html', 'header');
+        });
+    </script>
 </head>
 <body>
+    <div id="header"></div>
+
     <h1>Projects</h1>
     <p>Test</p>
+    <div class="footer">
+        <h2>© Copyright 2024 Kieran Pearson. All rights reserved.</h2>
+    </div>
 </body>
 </html>
