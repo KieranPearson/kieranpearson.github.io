@@ -126,8 +126,9 @@ body {
 
 .project-thumbnail-image {
     max-width: 200px;
+    height: 175px;
+    align-self: center;
     padding: 10px;
-    height: auto;
     border-radius: 15px;
 }
 
