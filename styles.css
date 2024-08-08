@@ -1,13 +1,11 @@
 .header {
     position: relative;
     padding: 20px;
-    margin: 7px;
     margin-bottom: 1px;
     background: #000040;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
 }
 
 .header-image {
@@ -68,12 +66,9 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #000025;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 7px;
-    margin-right: 7px;
     opacity: 80%;
 }
 
@@ -84,7 +79,6 @@ body {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    color: white;
     font-family: Verdana;
     font-size: 15px;
 }
@@ -101,8 +95,73 @@ body {
     font-family: Verdana;
     font-size: 10px;
     margin-top: auto;
-    margin-left: 7px;
-    margin-right: 7px;
+}
+
+.title {
+    display: block;
+    color: rgb(0, 0, 80);
+    text-align: center;
+    padding: 50px 30px;
+    text-decoration: none;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    margin-left: 35px;
+    margin-right: 35px;
+    gap: 35px;
+}
+
+.project-card {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 25px;
     border-radius: 10px;
-    margin-bottom: 7px;
+    box-sizing: border-box;
+}
+
+.project-thumbnail-image {
+    max-width: 200px;
+    padding: 10px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.project-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.project-title {
+    color: rgb(0, 0, 80);
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.project-description {
+    color: rgb(0, 0, 80);
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+.project-button {
+    color: rgb(100, 100, 100);
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 15px;
 }
