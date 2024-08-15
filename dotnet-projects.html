@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function loadHTML(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHTML('header.html', 'header');
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="title">.NET C# Projects</div>
+
+    <div class="project-cards">
+        <div class="project-card">
+            <a href="https://github.com/KieranPearson/MyMauiCalculator" target="_blank"><img src="maui-calculator-thumbnail.png" class="project-thumbnail-image"/></a>
+            <div class="project-content">
+                <a class="project-title">Calculator - a calculator app created using .NET MAUI</a>
+                <a class="project-description">
+                    A simple application to demonstrate .NET C# experience and my ability to learn and utilise different frameworks.
+                </a>
+                <a href="https://github.com/KieranPearson/MyMauiCalculator" target="_blank" class="project-button">
+                    View Git Repository
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>&copy; Copyright <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> 
+            Kieran Pearson. All rights reserved.
+        </h2>
+    </div>
+</body>
+</html>
